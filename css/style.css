@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#ohmsLawForm
+{
+    background-color: #eff0ff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+label
+{
+    margin-bottom: 8px;
+}
+
+select,
+input
+{
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#inputFields {
+    display: none;
+}
+
+.display_field
+{
+    margin: 10px 0px;
+    padding: 5px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#formular,
+#findFor
+{
+    font-size: large;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#result
+{
+    display: block;
+    line-height: 2;
+}
+
+/* responsive small screen (phone size) */
+@media(max-width: 576px)
+{
+    .calculator-container
+        {
+            display: block;
+            flex-direction: column;
+        }
+
+    #ohmsLawForm
+        {
+            flex-direction: column;
+        }
+
+    .heading
+        {
+            display: flex;
+            flex-direction: column;
+        }
+
+    #inputFields
+        {
+            padding: 20px 0;
+        }
+}

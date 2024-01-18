@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohm's Law Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <form id="ohmsLawForm">
+            <div class="heading">
+                <h1>Ohm's Law Calculator</h1>
+                <label for="calculationType">Choose what to calculate:</label>
+                <select id="calculationType" onchange="showInputFields()">
+                    <option value="None">None</option>
+                    <option value="current">Current (I)</option>
+                    <option value="voltage">Voltage (V)</option>
+                    <option value="resistance">Resistance (R)</option>
+                    <option value="resistor_in_series">Resistor in series</option>
+                    <option value="resistor_in_series">Resistor in parallel</option>
+                </select>
+            <button type="button" onclick="calculate()">Calculate</button>
+            <div id="ask"></div>
+            </div>
+            <div id="inputFields">
+                <label for="input1"></label>
+                <input type="text" id="input1" required>
+                <br>
+                <label for="input2"></label>
+                <input type="text" id="input2" required>
+            </div>
+            <br>
+        </form>
+        <div class="display_field">
+            <div id="formula"></div>
+            <div id="result"></div>
+            <div id="findFor"></div>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
